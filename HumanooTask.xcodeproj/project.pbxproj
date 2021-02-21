@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5981820C25E10DBB00CF34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981820B25E10DBB00CF34CF /* AppDelegate.swift */; };
+		5981820E25E10DBB00CF34CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981820D25E10DBB00CF34CF /* SceneDelegate.swift */; };
+		5981821025E10DBB00CF34CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981820F25E10DBB00CF34CF /* ViewController.swift */; };
+		5981821325E10DBB00CF34CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5981821125E10DBB00CF34CF /* Main.storyboard */; };
+		5981821525E10DBD00CF34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5981821425E10DBD00CF34CF /* Assets.xcassets */; };
+		5981821825E10DBD00CF34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5981821625E10DBD00CF34CF /* LaunchScreen.storyboard */; };
+		5981822325E10DBD00CF34CF /* HumanooTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981822225E10DBD00CF34CF /* HumanooTaskTests.swift */; };
+		5981822E25E10DBD00CF34CF /* HumanooTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981822D25E10DBD00CF34CF /* HumanooTaskUITests.swift */; };
+		5981824025E10E0300CF34CF /* PatternLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981823F25E10E0300CF34CF /* PatternLockView.swift */; };
+		59C9867925E1348200E5A1A5 /* UnlockPatternContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9867225E1348200E5A1A5 /* UnlockPatternContract.swift */; };
+		59C9867A25E1348200E5A1A5 /* UnlockPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9867325E1348200E5A1A5 /* UnlockPatternViewController.swift */; };
+		59C9867B25E1348200E5A1A5 /* UnlockPatternBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9867425E1348200E5A1A5 /* UnlockPatternBuilder.swift */; };
+		59C9867C25E1348200E5A1A5 /* UnlockPatternInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9867525E1348200E5A1A5 /* UnlockPatternInteractor.swift */; };
+		59C9867D25E1348200E5A1A5 /* UnlockPatternPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9867625E1348200E5A1A5 /* UnlockPatternPresenterImpl.swift */; };
+		59C9867F25E1348200E5A1A5 /* UnlockPatternRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9867825E1348200E5A1A5 /* UnlockPatternRouterImpl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5981821F25E10DBD00CF34CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5981820025E10DBB00CF34CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5981820725E10DBB00CF34CF;
+			remoteInfo = HumanooTask;
+		};
+		5981822A25E10DBD00CF34CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5981820025E10DBB00CF34CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5981820725E10DBB00CF34CF;
+			remoteInfo = HumanooTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5981820825E10DBB00CF34CF /* HumanooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5981820B25E10DBB00CF34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5981820D25E10DBB00CF34CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5981820F25E10DBB00CF34CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5981821225E10DBB00CF34CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5981821425E10DBD00CF34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5981821725E10DBD00CF34CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5981821925E10DBD00CF34CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5981821E25E10DBD00CF34CF /* HumanooTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumanooTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5981822225E10DBD00CF34CF /* HumanooTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanooTaskTests.swift; sourceTree = "<group>"; };
+		5981822425E10DBD00CF34CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5981822925E10DBD00CF34CF /* HumanooTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumanooTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5981822D25E10DBD00CF34CF /* HumanooTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanooTaskUITests.swift; sourceTree = "<group>"; };
+		5981822F25E10DBD00CF34CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5981823F25E10E0300CF34CF /* PatternLockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternLockView.swift; sourceTree = "<group>"; };
+		59C9867225E1348200E5A1A5 /* UnlockPatternContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPatternContract.swift; sourceTree = "<group>"; };
+		59C9867325E1348200E5A1A5 /* UnlockPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPatternViewController.swift; sourceTree = "<group>"; };
+		59C9867425E1348200E5A1A5 /* UnlockPatternBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPatternBuilder.swift; sourceTree = "<group>"; };
+		59C9867525E1348200E5A1A5 /* UnlockPatternInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPatternInteractor.swift; sourceTree = "<group>"; };
+		59C9867625E1348200E5A1A5 /* UnlockPatternPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPatternPresenterImpl.swift; sourceTree = "<group>"; };
+		59C9867825E1348200E5A1A5 /* UnlockPatternRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPatternRouterImpl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5981820525E10DBB00CF34CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5981821B25E10DBD00CF34CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5981822625E10DBD00CF34CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		593A084B25E277E600DA8DB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5981823F25E10E0300CF34CF /* PatternLockView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		598181FF25E10DBB00CF34CF = {
+			isa = PBXGroup;
+			children = (
+				5981820A25E10DBB00CF34CF /* HumanooTask */,
+				5981822125E10DBD00CF34CF /* HumanooTaskTests */,
+				5981822C25E10DBD00CF34CF /* HumanooTaskUITests */,
+				5981820925E10DBB00CF34CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5981820925E10DBB00CF34CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5981820825E10DBB00CF34CF /* HumanooTask.app */,
+				5981821E25E10DBD00CF34CF /* HumanooTaskTests.xctest */,
+				5981822925E10DBD00CF34CF /* HumanooTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5981820A25E10DBB00CF34CF /* HumanooTask */ = {
+			isa = PBXGroup;
+			children = (
+				5981823E25E10DCE00CF34CF /* UnlockPattern */,
+				5981820B25E10DBB00CF34CF /* AppDelegate.swift */,
+				5981820D25E10DBB00CF34CF /* SceneDelegate.swift */,
+				5981820F25E10DBB00CF34CF /* ViewController.swift */,
+				5981821125E10DBB00CF34CF /* Main.storyboard */,
+				5981821425E10DBD00CF34CF /* Assets.xcassets */,
+				5981821625E10DBD00CF34CF /* LaunchScreen.storyboard */,
+				5981821925E10DBD00CF34CF /* Info.plist */,
+			);
+			path = HumanooTask;
+			sourceTree = "<group>";
+		};
+		5981822125E10DBD00CF34CF /* HumanooTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				5981822225E10DBD00CF34CF /* HumanooTaskTests.swift */,
+				5981822425E10DBD00CF34CF /* Info.plist */,
+			);
+			path = HumanooTaskTests;
+			sourceTree = "<group>";
+		};
+		5981822C25E10DBD00CF34CF /* HumanooTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5981822D25E10DBD00CF34CF /* HumanooTaskUITests.swift */,
+				5981822F25E10DBD00CF34CF /* Info.plist */,
+			);
+			path = HumanooTaskUITests;
+			sourceTree = "<group>";
+		};
+		5981823E25E10DCE00CF34CF /* UnlockPattern */ = {
+			isa = PBXGroup;
+			children = (
+				593A084B25E277E600DA8DB1 /* View */,
+				59C9867225E1348200E5A1A5 /* UnlockPatternContract.swift */,
+				59C9867325E1348200E5A1A5 /* UnlockPatternViewController.swift */,
+				59C9867425E1348200E5A1A5 /* UnlockPatternBuilder.swift */,
+				59C9867525E1348200E5A1A5 /* UnlockPatternInteractor.swift */,
+				59C9867625E1348200E5A1A5 /* UnlockPatternPresenterImpl.swift */,
+				59C9867825E1348200E5A1A5 /* UnlockPatternRouterImpl.swift */,
+			);
+			path = UnlockPattern;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5981820725E10DBB00CF34CF /* HumanooTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5981823225E10DBD00CF34CF /* Build configuration list for PBXNativeTarget "HumanooTask" */;
+			buildPhases = (
+				5981820425E10DBB00CF34CF /* Sources */,
+				5981820525E10DBB00CF34CF /* Frameworks */,
+				5981820625E10DBB00CF34CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HumanooTask;
+			productName = HumanooTask;
+			productReference = 5981820825E10DBB00CF34CF /* HumanooTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5981821D25E10DBD00CF34CF /* HumanooTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5981823525E10DBD00CF34CF /* Build configuration list for PBXNativeTarget "HumanooTaskTests" */;
+			buildPhases = (
+				5981821A25E10DBD00CF34CF /* Sources */,
+				5981821B25E10DBD00CF34CF /* Frameworks */,
+				5981821C25E10DBD00CF34CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5981822025E10DBD00CF34CF /* PBXTargetDependency */,
+			);
+			name = HumanooTaskTests;
+			productName = HumanooTaskTests;
+			productReference = 5981821E25E10DBD00CF34CF /* HumanooTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5981822825E10DBD00CF34CF /* HumanooTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5981823825E10DBD00CF34CF /* Build configuration list for PBXNativeTarget "HumanooTaskUITests" */;
+			buildPhases = (
+				5981822525E10DBD00CF34CF /* Sources */,
+				5981822625E10DBD00CF34CF /* Frameworks */,
+				5981822725E10DBD00CF34CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5981822B25E10DBD00CF34CF /* PBXTargetDependency */,
+			);
+			name = HumanooTaskUITests;
+			productName = HumanooTaskUITests;
+			productReference = 5981822925E10DBD00CF34CF /* HumanooTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5981820025E10DBB00CF34CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					5981820725E10DBB00CF34CF = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					5981821D25E10DBD00CF34CF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5981820725E10DBB00CF34CF;
+					};
+					5981822825E10DBD00CF34CF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5981820725E10DBB00CF34CF;
+					};
+				};
+			};
+			buildConfigurationList = 5981820325E10DBB00CF34CF /* Build configuration list for PBXProject "HumanooTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 598181FF25E10DBB00CF34CF;
+			productRefGroup = 5981820925E10DBB00CF34CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5981820725E10DBB00CF34CF /* HumanooTask */,
+				5981821D25E10DBD00CF34CF /* HumanooTaskTests */,
+				5981822825E10DBD00CF34CF /* HumanooTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5981820625E10DBB00CF34CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5981821825E10DBD00CF34CF /* LaunchScreen.storyboard in Resources */,
+				5981821525E10DBD00CF34CF /* Assets.xcassets in Resources */,
+				5981821325E10DBB00CF34CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5981821C25E10DBD00CF34CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5981822725E10DBD00CF34CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5981820425E10DBB00CF34CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5981821025E10DBB00CF34CF /* ViewController.swift in Sources */,
+				59C9867925E1348200E5A1A5 /* UnlockPatternContract.swift in Sources */,
+				59C9867F25E1348200E5A1A5 /* UnlockPatternRouterImpl.swift in Sources */,
+				5981820C25E10DBB00CF34CF /* AppDelegate.swift in Sources */,
+				5981824025E10E0300CF34CF /* PatternLockView.swift in Sources */,
+				59C9867D25E1348200E5A1A5 /* UnlockPatternPresenterImpl.swift in Sources */,
+				59C9867B25E1348200E5A1A5 /* UnlockPatternBuilder.swift in Sources */,
+				59C9867C25E1348200E5A1A5 /* UnlockPatternInteractor.swift in Sources */,
+				5981820E25E10DBB00CF34CF /* SceneDelegate.swift in Sources */,
+				59C9867A25E1348200E5A1A5 /* UnlockPatternViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5981821A25E10DBD00CF34CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5981822325E10DBD00CF34CF /* HumanooTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5981822525E10DBD00CF34CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5981822E25E10DBD00CF34CF /* HumanooTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5981822025E10DBD00CF34CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5981820725E10DBB00CF34CF /* HumanooTask */;
+			targetProxy = 5981821F25E10DBD00CF34CF /* PBXContainerItemProxy */;
+		};
+		5981822B25E10DBD00CF34CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5981820725E10DBB00CF34CF /* HumanooTask */;
+			targetProxy = 5981822A25E10DBD00CF34CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5981821125E10DBB00CF34CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5981821225E10DBB00CF34CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5981821625E10DBD00CF34CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5981821725E10DBD00CF34CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5981823025E10DBD00CF34CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5981823125E10DBD00CF34CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5981823325E10DBD00CF34CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HumanooTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sharethemeal.dev.HumanooTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5981823425E10DBD00CF34CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HumanooTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sharethemeal.dev.HumanooTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5981823625E10DBD00CF34CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HumanooTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sharethemeal.dev.HumanooTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HumanooTask.app/HumanooTask";
+			};
+			name = Debug;
+		};
+		5981823725E10DBD00CF34CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HumanooTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sharethemeal.dev.HumanooTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HumanooTask.app/HumanooTask";
+			};
+			name = Release;
+		};
+		5981823925E10DBD00CF34CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HumanooTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sharethemeal.dev.HumanooTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HumanooTask;
+			};
+			name = Debug;
+		};
+		5981823A25E10DBD00CF34CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HumanooTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sharethemeal.dev.HumanooTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HumanooTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5981820325E10DBB00CF34CF /* Build configuration list for PBXProject "HumanooTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5981823025E10DBD00CF34CF /* Debug */,
+				5981823125E10DBD00CF34CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5981823225E10DBD00CF34CF /* Build configuration list for PBXNativeTarget "HumanooTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5981823325E10DBD00CF34CF /* Debug */,
+				5981823425E10DBD00CF34CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5981823525E10DBD00CF34CF /* Build configuration list for PBXNativeTarget "HumanooTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5981823625E10DBD00CF34CF /* Debug */,
+				5981823725E10DBD00CF34CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5981823825E10DBD00CF34CF /* Build configuration list for PBXNativeTarget "HumanooTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5981823925E10DBD00CF34CF /* Debug */,
+				5981823A25E10DBD00CF34CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5981820025E10DBB00CF34CF /* Project object */;
+}
