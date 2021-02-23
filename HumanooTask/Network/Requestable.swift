@@ -26,7 +26,7 @@ extension Requestable {
     }
 
     var baseURL: String {
-        return ""//Constants.baseURl
+        return Constants.baseURl
     }
 
     func request<T: Decodable>(completion: @escaping (Result<T, Error>) -> Void) {

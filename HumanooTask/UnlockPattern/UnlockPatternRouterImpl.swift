@@ -12,6 +12,8 @@ final class UnlockPatternRouterImpl: UnlockPatternRouter {
     weak var viewController: UIViewController?
 
     func openPageA() {
+        let controller = PageABuilder().build()
+        self.viewController?.navigationController?.pushViewController(controller, animated: true)
     }
 
     func openPageB() {
