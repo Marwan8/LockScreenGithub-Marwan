@@ -31,4 +31,5 @@ protocol PageAInteractorOutput: class {
 
 protocol PageARouter: class {
     func openPageB(with user: GithubUser)
+    func showError(message: String)
 }

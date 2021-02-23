@@ -53,6 +53,7 @@ extension PageAPresenterImpl: PageAInteractorOutput {
     }
 
     func fetchUserListFailed(error: Error?) {
-        // Error handling
+        self.view?.hideProgress()
+        router.showError(message: error?.localizedDescription ?? "")
     }
 }

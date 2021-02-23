@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		590AA45F25E5606100A367B0 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590AA45E25E5606100A367B0 /* UserDefaultsExtension.swift */; };
+		590AA46425E5718B00A367B0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590AA46325E5718B00A367B0 /* UIViewControllerExtension.swift */; };
 		593A085225E2802D00DA8DB1 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A085125E2802D00DA8DB1 /* URLSessionExtension.swift */; };
 		593A085825E2806300DA8DB1 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A085725E2806300DA8DB1 /* Requestable.swift */; };
 		593A086025E2809000DA8DB1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A085F25E2809000DA8DB1 /* HTTPMethod.swift */; };
@@ -63,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		590AA45E25E5606100A367B0 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		590AA46325E5718B00A367B0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		593A085125E2802D00DA8DB1 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 		593A085725E2806300DA8DB1 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		593A085F25E2809000DA8DB1 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				593A085125E2802D00DA8DB1 /* URLSessionExtension.swift */,
 				593A096125E516F500DA8DB1 /* UIImageViewExtension.swift */,
 				590AA45E25E5606100A367B0 /* UserDefaultsExtension.swift */,
+				590AA46325E5718B00A367B0 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				59C9867D25E1348200E5A1A5 /* UnlockPatternPresenterImpl.swift in Sources */,
 				593A087F25E281FE00DA8DB1 /* PageAContract.swift in Sources */,
 				59C9867B25E1348200E5A1A5 /* UnlockPatternBuilder.swift in Sources */,
+				590AA46425E5718B00A367B0 /* UIViewControllerExtension.swift in Sources */,
 				59C9867C25E1348200E5A1A5 /* UnlockPatternInteractor.swift in Sources */,
 				5981820E25E10DBB00CF34CF /* SceneDelegate.swift in Sources */,
 				593A096225E516F500DA8DB1 /* UIImageViewExtension.swift in Sources */,

@@ -15,4 +15,8 @@ final class PageARouterImpl: PageARouter {
         let controller = PageBBuilder().build(user: user)
         self.viewController?.navigationController?.pushViewController(controller, animated: true)
     }
+
+    func showError(message: String) {
+        self.viewController?.showAlert("", message: message)
+    }
 }
