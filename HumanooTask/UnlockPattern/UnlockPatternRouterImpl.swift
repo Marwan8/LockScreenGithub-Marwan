@@ -17,5 +17,7 @@ final class UnlockPatternRouterImpl: UnlockPatternRouter {
     }
 
     func openPageB() {
+        let controller = PageBBuilder().build(user: GithubUserDataProvider.shared.openedUser)
+        self.viewController?.navigationController?.pushViewController(controller, animated: true)
     }
 }

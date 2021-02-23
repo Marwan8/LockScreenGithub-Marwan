@@ -13,7 +13,7 @@ final class PageABuilder {
     public func build() -> UIViewController {
         let router = PageARouterImpl()
         let interactor = PageAInteractor(dataProvider: GithubUserDataProvider.shared)
-        let presenter = PageAPresenterImpl(router: router, interactor: interactor)
+        let presenter = PageAPresenterImpl(router: router, interactor: interactor, users: GithubUserDataProvider.shared.users)
         let view = PageAViewController(presenter: presenter)
         
         router.viewController = view

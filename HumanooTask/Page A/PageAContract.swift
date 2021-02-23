@@ -21,6 +21,7 @@ protocol PageAPresenter: class {
 
 protocol PageAInteractorInput: class {
     func fetchList(user: String)
+    func save(user: GithubUser)
 }
 
 protocol PageAInteractorOutput: class {

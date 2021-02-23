@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590AA45F25E5606100A367B0 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590AA45E25E5606100A367B0 /* UserDefaultsExtension.swift */; };
 		593A085225E2802D00DA8DB1 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A085125E2802D00DA8DB1 /* URLSessionExtension.swift */; };
 		593A085825E2806300DA8DB1 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A085725E2806300DA8DB1 /* Requestable.swift */; };
 		593A086025E2809000DA8DB1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A085F25E2809000DA8DB1 /* HTTPMethod.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		590AA45E25E5606100A367B0 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		593A085125E2802D00DA8DB1 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 		593A085725E2806300DA8DB1 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		593A085F25E2809000DA8DB1 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				593A085125E2802D00DA8DB1 /* URLSessionExtension.swift */,
 				593A096125E516F500DA8DB1 /* UIImageViewExtension.swift */,
+				590AA45E25E5606100A367B0 /* UserDefaultsExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				593A088325E281FE00DA8DB1 /* PageAPresenterImpl.swift in Sources */,
 				593A088125E281FE00DA8DB1 /* PageABuilder.swift in Sources */,
 				593A088025E281FE00DA8DB1 /* PageAViewController.swift in Sources */,
+				590AA45F25E5606100A367B0 /* UserDefaultsExtension.swift in Sources */,
 				59C9867F25E1348200E5A1A5 /* UnlockPatternRouterImpl.swift in Sources */,
 				593A094C25E5096400DA8DB1 /* PageBBuilder.swift in Sources */,
 				5981820C25E10DBB00CF34CF /* AppDelegate.swift in Sources */,
