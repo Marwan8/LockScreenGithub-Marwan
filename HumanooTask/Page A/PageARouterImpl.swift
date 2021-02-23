@@ -12,6 +12,7 @@ final class PageARouterImpl: PageARouter {
     weak var viewController: UIViewController?
 
     func openPageB(with user: GithubUser) {
-
+        let controller = PageBBuilder().build(user: user)
+        self.viewController?.navigationController?.pushViewController(controller, animated: true)
     }
 }

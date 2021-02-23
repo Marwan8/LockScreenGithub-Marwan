@@ -20,6 +20,12 @@
 		593A089425E2DBAB00DA8DB1 /* GithubUserDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A089325E2DBAB00DA8DB1 /* GithubUserDataProvider.swift */; };
 		593A08A225E2E14100DA8DB1 /* PageARouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A08A125E2E14100DA8DB1 /* PageARouterImpl.swift */; };
 		593A093A25E505E300DA8DB1 /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A093925E505E300DA8DB1 /* GithubUser.swift */; };
+		593A094A25E5096400DA8DB1 /* PageBContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A094325E5096400DA8DB1 /* PageBContract.swift */; };
+		593A094B25E5096400DA8DB1 /* PageBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A094425E5096400DA8DB1 /* PageBViewController.swift */; };
+		593A094C25E5096400DA8DB1 /* PageBBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A094525E5096400DA8DB1 /* PageBBuilder.swift */; };
+		593A094E25E5096400DA8DB1 /* PageBPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A094725E5096400DA8DB1 /* PageBPresenterImpl.swift */; };
+		593A095025E5096400DA8DB1 /* PageBRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A094925E5096400DA8DB1 /* PageBRouterImpl.swift */; };
+		593A096225E516F500DA8DB1 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593A096125E516F500DA8DB1 /* UIImageViewExtension.swift */; };
 		5981820C25E10DBB00CF34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981820B25E10DBB00CF34CF /* AppDelegate.swift */; };
 		5981820E25E10DBB00CF34CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981820D25E10DBB00CF34CF /* SceneDelegate.swift */; };
 		5981821025E10DBB00CF34CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981820F25E10DBB00CF34CF /* ViewController.swift */; };
@@ -68,6 +74,12 @@
 		593A089325E2DBAB00DA8DB1 /* GithubUserDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserDataProvider.swift; sourceTree = "<group>"; };
 		593A08A125E2E14100DA8DB1 /* PageARouterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageARouterImpl.swift; sourceTree = "<group>"; };
 		593A093925E505E300DA8DB1 /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
+		593A094325E5096400DA8DB1 /* PageBContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBContract.swift; sourceTree = "<group>"; };
+		593A094425E5096400DA8DB1 /* PageBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBViewController.swift; sourceTree = "<group>"; };
+		593A094525E5096400DA8DB1 /* PageBBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBBuilder.swift; sourceTree = "<group>"; };
+		593A094725E5096400DA8DB1 /* PageBPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBPresenterImpl.swift; sourceTree = "<group>"; };
+		593A094925E5096400DA8DB1 /* PageBRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBRouterImpl.swift; sourceTree = "<group>"; };
+		593A096125E516F500DA8DB1 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		5981820825E10DBB00CF34CF /* HumanooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5981820B25E10DBB00CF34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5981820D25E10DBB00CF34CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				593A085125E2802D00DA8DB1 /* URLSessionExtension.swift */,
+				593A096125E516F500DA8DB1 /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,6 +176,18 @@
 				593A093925E505E300DA8DB1 /* GithubUser.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		593A094225E5094100DA8DB1 /* Page B */ = {
+			isa = PBXGroup;
+			children = (
+				593A094325E5096400DA8DB1 /* PageBContract.swift */,
+				593A094425E5096400DA8DB1 /* PageBViewController.swift */,
+				593A094525E5096400DA8DB1 /* PageBBuilder.swift */,
+				593A094725E5096400DA8DB1 /* PageBPresenterImpl.swift */,
+				593A094925E5096400DA8DB1 /* PageBRouterImpl.swift */,
+			);
+			path = "Page B";
 			sourceTree = "<group>";
 		};
 		598181FF25E10DBB00CF34CF = {
@@ -190,6 +215,7 @@
 			children = (
 				5981823E25E10DCE00CF34CF /* UnlockPattern */,
 				593A084F25E27E3F00DA8DB1 /* Page A */,
+				593A094225E5094100DA8DB1 /* Page B */,
 				593A085025E2800900DA8DB1 /* Extensions */,
 				593A085625E2804900DA8DB1 /* Network */,
 				593A088E25E2DAB000DA8DB1 /* Constants.swift */,
@@ -372,10 +398,12 @@
 				593A093A25E505E300DA8DB1 /* GithubUser.swift in Sources */,
 				593A088225E281FE00DA8DB1 /* PageAInteractor.swift in Sources */,
 				59C9867925E1348200E5A1A5 /* UnlockPatternContract.swift in Sources */,
+				593A094B25E5096400DA8DB1 /* PageBViewController.swift in Sources */,
 				593A088325E281FE00DA8DB1 /* PageAPresenterImpl.swift in Sources */,
 				593A088125E281FE00DA8DB1 /* PageABuilder.swift in Sources */,
 				593A088025E281FE00DA8DB1 /* PageAViewController.swift in Sources */,
 				59C9867F25E1348200E5A1A5 /* UnlockPatternRouterImpl.swift in Sources */,
+				593A094C25E5096400DA8DB1 /* PageBBuilder.swift in Sources */,
 				5981820C25E10DBB00CF34CF /* AppDelegate.swift in Sources */,
 				5981824025E10E0300CF34CF /* PatternLockView.swift in Sources */,
 				59C9867D25E1348200E5A1A5 /* UnlockPatternPresenterImpl.swift in Sources */,
@@ -383,9 +411,13 @@
 				59C9867B25E1348200E5A1A5 /* UnlockPatternBuilder.swift in Sources */,
 				59C9867C25E1348200E5A1A5 /* UnlockPatternInteractor.swift in Sources */,
 				5981820E25E10DBB00CF34CF /* SceneDelegate.swift in Sources */,
+				593A096225E516F500DA8DB1 /* UIImageViewExtension.swift in Sources */,
 				593A085825E2806300DA8DB1 /* Requestable.swift in Sources */,
 				593A08A225E2E14100DA8DB1 /* PageARouterImpl.swift in Sources */,
+				593A094A25E5096400DA8DB1 /* PageBContract.swift in Sources */,
+				593A095025E5096400DA8DB1 /* PageBRouterImpl.swift in Sources */,
 				593A086025E2809000DA8DB1 /* HTTPMethod.swift in Sources */,
+				593A094E25E5096400DA8DB1 /* PageBPresenterImpl.swift in Sources */,
 				59C9867A25E1348200E5A1A5 /* UnlockPatternViewController.swift in Sources */,
 				593A088A25E2B62800DA8DB1 /* GithubAPI.swift in Sources */,
 				593A085225E2802D00DA8DB1 /* URLSessionExtension.swift in Sources */,
