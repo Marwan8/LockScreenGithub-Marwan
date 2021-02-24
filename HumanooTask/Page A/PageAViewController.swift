@@ -29,6 +29,7 @@ final class PageAViewController: UIViewController, PageAView {
         super.viewDidLoad()
 
         self.view.backgroundColor = .white
+        title = &&"pageA"
         
         setupSubviews()
         addSubviews()
@@ -38,7 +39,7 @@ final class PageAViewController: UIViewController, PageAView {
     
     private func setupSubviews() {
         searchBar.searchBarStyle = UISearchBar.Style.prominent
-        searchBar.placeholder = " Search User..."
+        searchBar.placeholder = &&"searchUser"
         searchBar.sizeToFit()
         searchBar.isTranslucent = false
         searchBar.backgroundImage = UIImage()

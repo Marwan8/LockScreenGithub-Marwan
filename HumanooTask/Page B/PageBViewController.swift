@@ -27,6 +27,7 @@ final class PageBViewController: UIViewController, PageBView {
         super.viewDidLoad()
 
         self.view.backgroundColor = .white
+        title = &&"pageB"
 
         setupSubviews()
         addSubviews()

@@ -69,9 +69,9 @@ final class UnlockPatternViewController: UIViewController, UnlockPatternView {
 
     func showPatternStatus(valid: Bool) {
         if valid {
-            displayStatus(text: "Valid path", textColor: .green)
+            displayStatus(text: &&"validPath", textColor: .green)
         } else {
-            displayStatus(text: "Invalid path", textColor: .red)
+            displayStatus(text: &&"inavlidPath", textColor: .red)
         }
     }
 }
@@ -82,7 +82,7 @@ extension UnlockPatternViewController: PatternLockViewDelegate {
     }
 
     func invalidPattern(max: Int) {
-        let maxMoves = "Invalid Pattern max \(max) possibilities"
+        let maxMoves = &&"inavlidMax" + " \(max) " + &&"possibilities"
         displayStatus(text: maxMoves, textColor: .red)
     }
 }
