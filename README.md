@@ -30,7 +30,7 @@ There are in total 3 VIPER modules.
 The UI appearance of this app is currently under construction 😂
 
 ## Run
-Please run the project using Xcode 12.3
+Please run the project using Xcode 12.5
 The porject support Swift 5 
 
 ## Unit Testing
